@@ -17,9 +17,10 @@ GNU General Public License for more details.
 """
 import webbrowser
 
-from nvplugin.nv_custom_export_locale import _
+from nvcustomexport.nv_custom_export_locale import _
 # this should be the first import
 from nvlib.controller.plugin.plugin_base import PluginBase
+from nvcustomexport.custom_export_service import CustomExportService
 
 
 class Plugin(PluginBase):
@@ -45,6 +46,8 @@ class Plugin(PluginBase):
 
         # Add an entry to the Help menu.
         self._ui.helpMenu.add_command(label=_('nv_custom_export Online help'), command=self.open_help)
+        customExportService = CustomExportService()
+        customExportService.set_custom_templates(self._mdl)
 
     def open_help(self):
         webbrowser.open(self.HELP_URL)
