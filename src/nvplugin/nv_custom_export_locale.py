@@ -1,7 +1,7 @@
-"""Locale settings for nv_plugin.
+"""Locale settings for nv_custom_export.
 
 Copyright (c) 2025 Peter Triesberger
-For further information see https://github.com/peter88213/nv_plugin
+For further information see https://github.com/peter88213/nv_custom_export
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import gettext
@@ -17,7 +17,7 @@ except:
     # Fallback for old Windows versions.
     CURRENT_LANGUAGE = locale.getdefaultlocale()[0][:2]
 try:
-    t = gettext.translation('nv_plugin', LOCALE_PATH, languages=[CURRENT_LANGUAGE])
+    t = gettext.translation('nv_custom_export', LOCALE_PATH, languages=[CURRENT_LANGUAGE])
     _ = t.gettext
 except:
 

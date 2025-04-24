@@ -1,8 +1,8 @@
-"""Plugin template for novelibre.
+"""novelibre plugin providing a custom template-based export for the final document. 
 
 Requires Python 3.6+
 Copyright (c) 2025 Peter Triesberger
-For further information see https://github.com/peter88213/nv_plugin
+For further information see https://github.com/peter88213/nv_custom_export
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@ GNU General Public License for more details.
 """
 import webbrowser
 
-from nvplugin.nvplugin_locale import _
+from nvplugin.nv_custom_export_locale import _
 # this should be the first import
 from nvlib.controller.plugin.plugin_base import PluginBase
 
@@ -25,11 +25,11 @@ from nvlib.controller.plugin.plugin_base import PluginBase
 class Plugin(PluginBase):
     """Template plugin class."""
     VERSION = '@release'
-    API_VERSION = '5.0'
-    DESCRIPTION = 'Plugin template'
-    URL = 'https://github.com/peter88213/nv_plugin'
+    API_VERSION = '5.22'
+    DESCRIPTION = 'Custom template-based export for the final document'
+    URL = 'https://github.com/peter88213/nv_custom_export'
 
-    HELP_URL = 'https://github.com/peter88213/nv_plugin/tree/main/docs/nv_plugin'
+    HELP_URL = 'https://github.com/peter88213/nv_custom_export/tree/main/docs/nv_custom_export'
 
     def install(self, model, view, controller):
         """Install the plugin.
@@ -44,7 +44,7 @@ class Plugin(PluginBase):
         super().install(model, view, controller)
 
         # Add an entry to the Help menu.
-        self._ui.helpMenu.add_command(label=_('nv_plugin Online help'), command=self.open_help)
+        self._ui.helpMenu.add_command(label=_('nv_custom_export Online help'), command=self.open_help)
 
     def open_help(self):
         webbrowser.open(self.HELP_URL)
