@@ -7,6 +7,7 @@
 
 ### Version 0.1.0
 
-- Release under the GPLv3 license.
+- Proof of concept; setting the viewpoint character at the beginning of the 
+  chapters' first sections.
 
 Compatibility: novelibre version 5.22 API

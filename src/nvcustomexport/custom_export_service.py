@@ -21,19 +21,7 @@ class CustomExportService:
 
     def set_custom_templates(self, model):
         exportClass = model.nvService.final_document_class()
-
-        exportClass._fileHeader = f'''$ContentHeader<text:p text:style-name="Title">$Title</text:p>
-    <text:p text:style-name="Subtitle">$AuthorName</text:p>$Filters
+        exportClass._firstSectionTemplate = '''<text:p text:style-name="Heading_20_6">$Viewpoint</text:p>\n'
+$SectionContent
     '''
-
-        exportClass._partTemplate = '''<text:h text:style-name="Heading_20_1" text:outline-level="1">$Title</text:h>$Epigraph$EpigraphSrc
-    '''
-
-        exportClass._chapterTemplate = '''<text:h text:style-name="Heading_20_2" text:outline-level="2">$ChapterNumber</text:h>$Epigraph$EpigraphSrc
-    '''
-
-        exportClass._sectionTemplate = '''$SectionContent
-    '''
-
-        exportClass._sectionDivider = '<text:p text:style-name="Heading_20_4">~</text:p>\n'
 

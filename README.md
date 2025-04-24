@@ -9,7 +9,6 @@ The user can provide custom export templates either locally in the project folde
 ### Project level templates
 
 - `header.xml`
-- `footer.xml`
 
 ### Chapter level templates
 

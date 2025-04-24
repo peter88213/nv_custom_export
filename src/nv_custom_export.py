@@ -17,8 +17,6 @@ GNU General Public License for more details.
 """
 import webbrowser
 
-from nvcustomexport.nv_custom_export_locale import _
-# this should be the first import
 from nvlib.controller.plugin.plugin_base import PluginBase
 from nvcustomexport.custom_export_service import CustomExportService
 
@@ -30,7 +28,7 @@ class Plugin(PluginBase):
     DESCRIPTION = 'Custom template-based export for the final document'
     URL = 'https://github.com/peter88213/nv_custom_export'
 
-    HELP_URL = 'https://github.com/peter88213/nv_custom_export/tree/main/docs/nv_custom_export'
+    HELP_URL = 'https://github.com/peter88213/nv_custom_export/tree/main/docs/usage.md'
 
     def install(self, model, view, controller):
         """Install the plugin.
@@ -45,7 +43,7 @@ class Plugin(PluginBase):
         super().install(model, view, controller)
 
         # Add an entry to the Help menu.
-        self._ui.helpMenu.add_command(label=_('nv_custom_export Online help'), command=self.open_help)
+        self._ui.helpMenu.add_command(label='nv_custom_export Online help', command=self.open_help)
         customExportService = CustomExportService()
         customExportService.set_custom_templates(self._mdl)
 
