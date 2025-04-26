@@ -1,3 +1,9 @@
+[![Download the latest release](docs/img/download-button.png)](https://github.com/peter88213/nv_custom_export/raw/main/dist/nv_custom_export_v0.2.0.pyzw)
+[![Changelog](docs/img/changelog-button.png)](docs/changelog.md)
+[![News/Feedback](docs/img/news-button.png)](https://github.com/peter88213/novelibre/discussions)
+[![Online help](docs/img/help-button.png)](https://peter88213.github.io/nv_custom_export/help/)
+
+
 # nv_custom_export
 
 The [novelibre](https://github.com/peter88213/novelibre/) Python program helps authors organize novels.  
@@ -5,28 +11,6 @@ The [novelibre](https://github.com/peter88213/novelibre/) Python program helps a
 The user can provide custom export templates either locally in the project folder, or globally in the installation folder. 
 *novelibre* shall import the templates and apply them for the final document export.
  
-
-### Project level templates
-
-- `header.txt`
-
-### Chapter level templates
-
-- `part_template.txt`(part header; applied to all "normal" parts)
-- `chapter_template.txt`(chapter header; applied to all "normal" chapters)
-- `part_end_template.txt`(part footer; applied to all "normal" parts)
-- `chapter_end_template.txt`(chapter footer; applied to all "normal" chapters)
-
-
-
-### Section level templates
-
-- `section_template.txt`(applied to "normal" sections within "normal" chapters)
-- `first_section_template.txt`(applied  to sections at the beginning of the chapter)
-- `section_divider.txt`(lead sections, beginning from the second in chapter)
-
-
-![Screenshot](docs/Screenshots/screen01.png)
 
 ## Requirements
 
@@ -67,7 +51,7 @@ The package is also available in zip format: [nv_custom_export_v0.2.0.zip](https
 
 ## Usage
 
-See the [online manual](docs/usage.md)
+See the [online manual](https://peter88213.github.io/nv_custom_export/help/)
 
 ---
 
