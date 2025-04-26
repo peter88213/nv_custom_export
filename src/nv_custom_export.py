@@ -28,7 +28,7 @@ class Plugin(PluginBase):
     DESCRIPTION = 'Custom template-based export for the final document'
     URL = 'https://github.com/peter88213/nv_custom_export'
 
-    HELP_URL = 'https://github.com/peter88213/nv_custom_export/tree/main/docs/usage.md'
+    HELP_URL = 'https://peter88213.github.io/nv_custom_export/nv_custom_export/'
 
     def install(self, model, view, controller):
         """Install the plugin.
