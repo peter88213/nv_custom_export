@@ -29,7 +29,8 @@ You can open it with **Help > nv_custom_export Online help**.
 ### Section level templates
 
 - `section_template.txt`(applied to "normal" sections within "normal" chapters)
-- `first_section_template.txt`(applied  to sections at the beginning of the chapter)
+- `appended_section_template.txt`(optional; applied to "normal" sections that are appended to the previous one)
+- `first_section_template.txt`(optional; applied  to "normal" sections at the beginning of the chapter)
 - `section_divider.txt`(lead sections, beginning from the second in chapter)
 
 

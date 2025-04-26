@@ -5,6 +5,13 @@
 ## Changelog
 
 
+### Version 0.3.0
+
+- Supporting the optional export template for appended sections.
+
+Compatibility: novelibre version 5.23 API
+
+
 ### Version 0.2.0
 
 - Implementation finished.

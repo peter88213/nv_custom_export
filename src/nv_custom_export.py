@@ -24,7 +24,7 @@ from nvcustomexport.custom_export_service import CustomExportService
 class Plugin(PluginBase):
     """Template plugin class."""
     VERSION = '@release'
-    API_VERSION = '5.22'
+    API_VERSION = '5.23'
     DESCRIPTION = 'Custom template-based export for the final document'
     URL = 'https://github.com/peter88213/nv_custom_export'
 
@@ -44,7 +44,7 @@ class Plugin(PluginBase):
 
         # Add an entry to the Help menu.
         self._ui.helpMenu.add_command(label='nv_custom_export Online help', command=self.open_help)
-        self.customExportService = CustomExportService(self._mdl)
+        self.customExportService = CustomExportService(model, view, controller)
 
     def on_open(self):
         """Actions to be performed after a project is opened."""

@@ -14,7 +14,7 @@ The user can provide custom export templates either locally in the project folde
 
 ## Requirements
 
-- [novelibre](https://github.com/peter88213/novelibre/) version 5.22+
+- [novelibre](https://github.com/peter88213/novelibre/) version 5.23+
 
 ## Download and install
 
