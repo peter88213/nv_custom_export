@@ -2,18 +2,21 @@
 
 --- 
 
-A [novelibre](https://github.com/peter88213/novelibre/) plugin. 
-
 ---
 
 # Installation
 
-If [novelibre](https://github.com/peter88213/novelibre/) is installed, the setup script *setup.py* installs the *nv_custom_export* plugin in the *novelibre* plugin directory.
+- Unzip the downloaded zipfile into a new folder.
+- Move into this new folder and launch **setup.pyw**. This installs the plugin.
+
+*Note: If you install novelibre at a later time, you can always install the plugin afterwards by running the nv_aeon2 setup script again.*
 
 
 ---
 
-# Operation
+# Usage
+
+See the [online help](https://peter88213.github.io/nv_custom_export/help/).
 
 ---
 
