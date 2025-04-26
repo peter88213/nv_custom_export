@@ -1,0 +1,3 @@
+<text:p text:style-name="Heading_20_6">$Viewpoint</text:p>\n'
+$SectionContent
+    

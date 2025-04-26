@@ -8,6 +8,7 @@ License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 from shutil import copytree
 from shutil import copy2
+from shutil import rmtree
 import zipfile
 import os
 import sys
@@ -20,6 +21,7 @@ except ModuleNotFoundError:
 
 PLUGIN = 'nv_custom_export.py'
 VERSION = ' @release'
+PRJ = 'nv_custom_export'
 
 root = Tk()
 processInfo = Label(root, text='')
@@ -83,6 +85,12 @@ def main(zipped=True):
         output('Copying locale ...')
         copy_tree('locale', applicationDir)
         output(f'Sucessfully installed "{PLUGIN}" at "{os.path.normpath(pluginDir)}"')
+
+        # Provide the sample files.
+        output('Copying/replacing sample files ...')
+        rmtree(f'{applicationDir}/{PRJ}_sample', ignore_errors=True)
+        copy_tree(f'{PRJ}_sample', applicationDir)
+
     else:
         output(f'ERROR: Cannot find a novelibre installation at "{applicationDir}"')
 

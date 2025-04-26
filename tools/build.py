@@ -21,6 +21,13 @@ class PluginBuilder(PackageBuilder):
     LOCAL_LIB = 'nvcustomexport'
     GERMAN_TRANSLATION = False
 
+    def __init__(self, version):
+        super().__init__(version)
+        self.sampleTarget = f'{self.buildDir}/{self.PRJ_NAME}_sample'
+
+    def add_extras(self):
+        self.add_sample()
+
 
 def main():
     pb = PluginBuilder(VERSION)
