@@ -44,8 +44,11 @@ class Plugin(PluginBase):
 
         # Add an entry to the Help menu.
         self._ui.helpMenu.add_command(label='nv_custom_export Online help', command=self.open_help)
-        customExportService = CustomExportService()
-        customExportService.set_custom_templates(self._mdl)
+        self.customExportService = CustomExportService(self._mdl)
+
+    def on_open(self):
+        """Actions to be performed after a project is opened."""
+        self.customExportService.set_custom_templates()
 
     def open_help(self):
         webbrowser.open(self.HELP_URL)

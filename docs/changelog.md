@@ -5,6 +5,13 @@
 ## Changelog
 
 
+### Version 0.2.0
+
+- Implementation finished.
+
+Compatibility: novelibre version 5.22 API
+
+
 ### Version 0.1.2
 
 - Set up the help page.
