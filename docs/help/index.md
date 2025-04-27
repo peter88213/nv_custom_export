@@ -11,6 +11,29 @@ This page refers to the latest `nv_custom_export
 <https://github.com/peter88213/nv_custom_export/>`__ release.
 You can open it with **Help > nv_custom_export Online help**.
 
+---
+
+**Important**
+
+The *nv_custom_export* plugin processes text files to generate code according to the 
+[Openoffice.org XML file format](https://www.openoffice.org/xml/xml_specification.pdf). 
+I highly recommend that you familiarize yourself with this XML format before creating your 
+own templates. If you do something wrong, *novelibre* may generate a text document that cannot 
+be opened by OpenOffice/LibreOffice. In an emergency, simply delete your self-generated 
+template files or uninstall the *nv_custom_export* plugin via the Plugin manager. 
+
+The best way to get started is to experiment with the examples provided (see below).
+
+---
+
+## Examples
+
+The installation includes a directory named `nv_custom_export_sample` containing several 
+subdirectories with example templates for different purposes. 
+Please refer to the included README files for documentation.
+
+
+# Reference
 
 ## Templates
 
@@ -45,23 +68,23 @@ There are two options:
 2.  `${Placeholder}` - If the placeholder is followed by a character
     that is not recognizable as a separator.
 
-### \"Project template\" placeholders
+### "Project template" placeholders
 
 -   `$Title` - Project title
 -   `$Desc` - Project description
 -   `$AuthorName` - Author\'s name
 -   `$Language` - Language code acc. to ISO 639-1
 -   `$Country` - Country code acc. to ISO 3166-2
--   `$CustomPlotProgress` - Custom \"Plot progress\" field title
--   `$CustomCharacterization` - Custom \"Characterization\" field title
--   `$CustomWorldBuilding` - Custom \"World building\" field title
--   `$CustomGoal` - Custom \"Goal\" field title
--   `$CustomConflict` - Custom \"Conflict\" field title
--   `$CustomOutcome` - Custom \"Outcome\" field title
--   `$CustomChrBio` - Custom character \"Bio\" field title
--   `$CustomChrGoals` - Custom character \"Goals\" field title
+-   `$CustomPlotProgress` - Custom "Plot progress" field title
+-   `$CustomCharacterization` - Custom "Characterization" field title
+-   `$CustomWorldBuilding` - Custom "World building" field title
+-   `$CustomGoal` - Custom "Goal" field title
+-   `$CustomConflict` - Custom "Conflict" field title
+-   `$CustomOutcome` - Custom "Outcome" field title
+-   `$CustomChrBio` - Custom character "Bio" field title
+-   `$CustomChrGoals` - Custom character "Goals" field title
 
-### \"Chapter template\" placeholders
+### "Chapter template" placeholders
 
 -   `$ID` - Chapter ID,
 -   `$ChapterNumber` - Chapter number (in sort order),
@@ -76,7 +99,7 @@ There are two options:
 -   `$Country` - Country code acc. to ISO 3166-2
 -   `$ManuscriptSuffix` - File name suffix of the manuscript
 
-### \"Section template\" placeholders
+### "Section template" placeholders
 
 -   `$ID` - Section ID,
 -   `$SectionNumber` - Section number (in sort order),
@@ -85,7 +108,7 @@ There are two options:
 -   `$WordCount` - Section word count
 -   `$WordsTotal` - Accumulated word count including the current section
 -   `$Status` - Section status (Outline, Draft etc.)
--   `$SectionContent` - Section content
+-   `$SectionContent` - Section content consisting of ready-formatted paragraphs.
 -   `$Date` - Specific section date (YYYY-MM-DD)
 -   `$Time` - Time section begins: (hh:mm)
 -   `$OdsTime` - Time section begins: (PThhHmmMssS)
@@ -118,10 +141,10 @@ There are two options:
 -   `$Country` - Country code acc. to ISO 3166-2
 -   `$ManuscriptSuffix` - File name suffix of the manuscript
 -   `$SectionsSuffix` - File name suffix of the section descriptions
--   `$CustomPlotProgress` - Custom \"Plot progress\" field title
--   `$CustomCharacterization` - Custom \"Characterization\" field title
--   `$CustomWorldBuilding` - Custom \"World building\" field title
--   `$CustomGoal` - Custom \"Goal\" field title
--   `$CustomConflict` - Custom \"Conflict\" field title
--   `$CustomOutcome` - Custom \"Outcome\" field title
+-   `$CustomPlotProgress` - Custom "Plot progress" field title
+-   `$CustomCharacterization` - Custom "Characterization" field title
+-   `$CustomWorldBuilding` - Custom "World building" field title
+-   `$CustomGoal` - Custom "Goal" field title
+-   `$CustomConflict` - Custom "Conflict" field title
+-   `$CustomOutcome` - Custom "Outcome" field title
 
