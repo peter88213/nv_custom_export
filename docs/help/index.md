@@ -2,9 +2,6 @@
 
 ---
 
-A [novelibre](https://github.com/peter88213/novelibre/) plugin providing a custom template-based export for the final document.
-
-
 # User guide
 
 This page refers to the latest 
