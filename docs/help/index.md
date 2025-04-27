@@ -61,16 +61,17 @@ The installation includes a directory named `nv_custom_export_sample` containing
 subdirectories with example templates for different purposes. 
 Please refer to the included README files for documentation.
 
+---
 
-# Reference
+## Reference
 
-## Templates
+### Templates
 
-### Project level templates
+#### Project level templates
 
 - `header.txt`
 
-### Chapter level templates
+#### Chapter level templates
 
 - `part_template.txt`(part header; applied to all "normal" parts)
 - `chapter_template.txt`(chapter header; applied to all "normal" chapters)
@@ -86,9 +87,9 @@ Please refer to the included README files for documentation.
 - `section_divider.txt`(lead sections, beginning from the second in chapter)
 
 
-## Placeholders
+### Placeholders
 
-### Syntax
+#### Syntax
 
 There are two options:
 
@@ -97,7 +98,7 @@ There are two options:
 2.  `${Placeholder}` - If the placeholder is followed by a character
     that is not recognizable as a separator.
 
-### "Project template" placeholders
+#### "Project template" placeholders
 
 -   `$Title` - Project title
 -   `$Desc` - Project description consisting of ready-formatted paragraphs
@@ -113,7 +114,7 @@ There are two options:
 -   `$CustomChrBio` - Custom character "Bio" field title
 -   `$CustomChrGoals` - Custom character "Goals" field title
 
-### "Chapter template" placeholders
+#### "Chapter template" placeholders
 
 -   `$ID` - Chapter ID,
 -   `$ChapterNumber` - Chapter number (in sort order),
@@ -128,7 +129,7 @@ There are two options:
 -   `$Country` - Country code acc. to ISO 3166-2
 -   `$ManuscriptSuffix` - File name suffix of the manuscript
 
-### "Section template" placeholders
+#### "Section template" placeholders
 
 -   `$ID` - Section ID,
 -   `$SectionNumber` - Section number (in sort order),
