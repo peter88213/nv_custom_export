@@ -16,7 +16,7 @@ You can open it with **Help > nv_custom_export Online help**.
 **Important**
 
 The *nv_custom_export* plugin processes text files to generate code according to the 
-[Openoffice.org XML file format](https://www.openoffice.org/xml/xml_specification.pdf). 
+[OpenDocument XML file format](https://en.wikipedia.org/wiki/OpenDocument_technical_specification#content.xml). 
 I highly recommend that you familiarize yourself with this XML format before creating your 
 own templates. If you do something wrong, *novelibre* may generate a text document that cannot 
 be opened by OpenOffice/LibreOffice. In an emergency, simply delete your self-generated 
@@ -25,6 +25,35 @@ template files or uninstall the *nv_custom_export* plugin via the Plugin manager
 The best way to get started is to experiment with the examples provided (see below).
 
 ---
+
+
+## Configuration
+
+Configuration is done by providing your custom template files either globally
+or locally in a template folder. 
+If there is no template folder at all, the *novelibre* default templates are applied.
+ 
+
+### Global templates
+
+Optional global templates are applied to all of your *novelibre* projects
+that have no local templates (see below).
+
+Place a subfolder named `nv_custom_export` in your *novelibre* installation  directory.
+It contains all template files to be applied. 
+The best way is to copy the provided sample template files (see below) and customize 
+them with a text editor according to your needs.
+
+
+### Local templates
+
+Optional local templates are used prior to global templates, if any.
+
+Place a subfolder named `nv_custom_export` in your project directory.
+It contains all template files to be applied to this project. 
+The best way is to copy the provided sample template files (see below) and customize 
+them with a text editor according to your needs.
+
 
 ## Examples
 
