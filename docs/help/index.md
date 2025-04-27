@@ -5,7 +5,7 @@
 A [novelibre](https://github.com/peter88213/novelibre/) plugin providing a custom template-based export for the final document.
 
 
-**User guide**
+# User guide
 
 This page refers to the latest `nv_custom_export
 <https://github.com/peter88213/nv_custom_export/>`__ release.
