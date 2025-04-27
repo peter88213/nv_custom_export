@@ -7,9 +7,13 @@ A [novelibre](https://github.com/peter88213/novelibre/) plugin providing a custo
 
 # User guide
 
-This page refers to the latest `nv_custom_export
-<https://github.com/peter88213/nv_custom_export/>`__ release.
+This page refers to the latest 
+[nv_custom_export](https://github.com/peter88213/nv_custom_export/) release.
 You can open it with **Help > nv_custom_export Online help**.
+
+The plugin replaces the default templates for the *Final manuscript document* export
+with custom templates that can be provided either locally (per project), 
+or globally (for all projects) by the user. 
 
 ---
 

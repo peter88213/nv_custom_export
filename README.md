@@ -8,8 +8,9 @@
 
 The [novelibre](https://github.com/peter88213/novelibre/) Python program helps authors organize novels.  
 
-The user can provide custom export templates either locally in the project folder, or globally in the installation folder. 
-*novelibre* shall import the templates and apply them for the final document export.
+The plugin replaces the default templates for the *Final manuscript document* export
+with custom templates that can be provided either locally (per project), 
+or globally (for all projects) by the user. 
  
 
 ## Requirements
