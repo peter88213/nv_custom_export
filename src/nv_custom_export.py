@@ -44,6 +44,8 @@ class Plugin(PluginBase):
 
         # Add an entry to the Help menu.
         self._ui.helpMenu.add_command(label='nv_custom_export Online help', command=self.open_help)
+
+        # Start the service.
         self.customExportService = CustomExportService(model, view, controller)
 
     def on_open(self):
