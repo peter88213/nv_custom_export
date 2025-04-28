@@ -179,3 +179,7 @@ There are two options:
 -   `$CustomConflict` - Custom "Conflict" field title
 -   `$CustomOutcome` - Custom "Outcome" field title
 
+
+---
+
+Copyright (c) 2025 by Peter Triesberger. All rights reserved.
