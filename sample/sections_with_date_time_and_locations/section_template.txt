@@ -1,0 +1,4 @@
+<text:p text:style-name="Heading_20_5">$DateWeekday $ScDate $Time</text:p>\n'
+<text:p text:style-name="Heading_20_6">$Locations</text:p>\n'
+$SectionContent
+    
