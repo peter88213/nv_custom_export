@@ -82,22 +82,22 @@ and edit the paragraph styles there.
 
 #### Project level templates
 
-- `header.txt`
+- `header.txt` (document header)
 
 #### Chapter level templates
 
-- `part_template.txt`(part header; applied to all "normal" parts)
-- `chapter_template.txt`(chapter header; applied to all "normal" chapters)
-- `part_end_template.txt`(part footer; applied to all "normal" parts)
-- `chapter_end_template.txt`(chapter footer; applied to all "normal" chapters)
+- `part_template.txt` (part header; applied to all "normal" parts)
+- `chapter_template.txt` (chapter header; applied to all "normal" chapters)
+- `part_end_template.txt` (part footer; applied to all "normal" parts)
+- `chapter_end_template.txt` (chapter footer; applied to all "normal" chapters)
 
 
-### Section level templates
+#### Section level templates
 
-- `section_template.txt`(applied to "normal" sections within "normal" chapters)
-- `appended_section_template.txt`(optional; applied to "normal" sections that are appended to the previous one)
-- `first_section_template.txt`(optional; applied  to "normal" sections at the beginning of the chapter)
-- `section_divider.txt`(lead sections, beginning from the second in chapter)
+- `section_template.txt` (applied to "normal" sections within "normal" chapters)
+- `appended_section_template.txt` (optional; applied to "normal" sections that are appended to the previous one)
+- `first_section_template.txt` (optional; applied  to "normal" sections at the beginning of the chapter)
+- `section_divider.txt` (lead sections, beginning from the second in chapter)
 
 
 ### Placeholders
