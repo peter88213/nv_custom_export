@@ -1,0 +1,2 @@
+$ContentHeader<text:p text:style-name="Title">$Title</text:p>
+<text:p text:style-name="Subtitle">$AuthorName</text:p>$Filters

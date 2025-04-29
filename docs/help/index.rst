@@ -139,6 +139,7 @@ There are two options:
 -  ``$CustomOutcome`` - Custom “Outcome” field title
 -  ``$CustomChrBio`` - Custom character “Bio” field title
 -  ``$CustomChrGoals`` - Custom character “Goals” field title
+-  ``$Filters`` - Information about the use of filters, if any
 
 “Chapter template” placeholders
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
