@@ -64,6 +64,18 @@ Please refer to the included README files for documentation.
 
 ---
 
+**Hint**
+
+If you insert metadata such as date, time, location, or viewpoint, 
+you best use heading page styles that are not used by *novelibre* 
+by default, i.e. `Heading 5`, `Heading 6`, `Heading 7`, etc.
+To adjust the appearance and the spacing above and below
+the paragraphs, you might want to set a custom ODT export 
+[document template](https://peter88213.github.io/nvhelp-en/export_menu.html#select-document-template)
+and edit the paragraph styles there. 
+
+---
+
 ## Reference
 
 ### Templates
