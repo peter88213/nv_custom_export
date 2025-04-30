@@ -1,4 +1,4 @@
-<text:p text:style-name="Heading_20_5">$Month</text:p>\n'
+<text:p text:style-name="Heading_20_5">$MonthName</text:p>\n'
 <text:p text:style-name="Heading_20_6">$Viewpoint</text:p>\n'
 $SectionContent
     
