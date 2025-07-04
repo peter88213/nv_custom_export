@@ -32,10 +32,14 @@ class CustomExportService(ServiceBase):
         
         First look for a template folder in the project directory.
         It there is none, look in the novelibre installation directory.
-        Note: This is a separate method, so it can be overridden by superclasses.
+        Note: This is a separate method, so it can be overridden 
+        by superclasses.
         """
         try:
-            self.templateDir = f'{os.path.dirname(self._mdl.prjFile.filePath)}/{TEMPLATE_FOLDER}'
+            self.templateDir = (
+                f'{os.path.dirname(self._mdl.prjFile.filePath)}/'
+                f'{TEMPLATE_FOLDER}'
+            )
         except:
             self.templateDir = ''
         if not os.path.isdir(self.templateDir):
@@ -48,15 +52,42 @@ class CustomExportService(ServiceBase):
         with custom templates, if any. Otherwise, reset them to default.
         """
         self.set_template_dir()
-        self.exportClass._appendedSectionTemplate = self.get_template_str('appended_section_template.txt', self.defaultAppendedSectionTemplate)
-        self.exportClass._fileHeader = self.get_template_str('header.txt', self.defaultFileHeader)
-        self.exportClass._partTemplate = self.get_template_str('part_template.txt', self.defaultPartTemplate)
-        self.exportClass._partEndTemplate = self.get_template_str('part_end_template.txt', self.defaultPartEndTemplate)
-        self.exportClass._chapterTemplate = self.get_template_str('chapter_template.txt', self.defaultChapterTemplate)
-        self.exportClass._chapterEndTemplate = self.get_template_str('chapter_end_template.txt', self.defaultChapterEndTemplate)
-        self.exportClass._sectionTemplate = self.get_template_str('section_template.txt', self.defaultSectionTemplate)
-        self.exportClass._firstSectionTemplate = self.get_template_str('first_section_template.txt', self.defaultFirstSectionTemplate)
-        self.exportClass._sectionDivider = self.get_template_str('section_divider.txt', self.defaultSectionDivider)
+        self.exportClass._appendedSectionTemplate = self.get_template_str(
+            'appended_section_template.txt',
+            self.defaultAppendedSectionTemplate
+        )
+        self.exportClass._fileHeader = self.get_template_str(
+            'header.txt',
+            self.defaultFileHeader
+        )
+        self.exportClass._partTemplate = self.get_template_str(
+            'part_template.txt',
+            self.defaultPartTemplate
+        )
+        self.exportClass._partEndTemplate = self.get_template_str(
+            'part_end_template.txt',
+            self.defaultPartEndTemplate
+        )
+        self.exportClass._chapterTemplate = self.get_template_str(
+            'chapter_template.txt',
+            self.defaultChapterTemplate
+        )
+        self.exportClass._chapterEndTemplate = self.get_template_str(
+            'chapter_end_template.txt',
+            self.defaultChapterEndTemplate
+        )
+        self.exportClass._sectionTemplate = self.get_template_str(
+            'section_template.txt',
+            self.defaultSectionTemplate
+        )
+        self.exportClass._firstSectionTemplate = self.get_template_str(
+            'first_section_template.txt',
+            self.defaultFirstSectionTemplate
+        )
+        self.exportClass._sectionDivider = self.get_template_str(
+            'section_divider.txt',
+            self.defaultSectionDivider
+        )
 
     def get_template_str(self, fileName, defaultStr):
         """Return a template string.
@@ -73,7 +104,10 @@ class CustomExportService(ServiceBase):
             except Exception as ex:
                 self._ui.show_error(
                     title='nv_custom_export plugin',
-                    message=f'Cannot load custom template: {os.path.normpath(templateFile)}',
+                    message=(
+                        'Cannot load custom template: '
+                        f'{os.path.normpath(templateFile)}'
+                    ),
                     detail=str(ex),
                     )
         return templateStr

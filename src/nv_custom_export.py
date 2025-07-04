@@ -1,4 +1,4 @@
-"""novelibre plugin providing a custom template-based export for the final document. 
+"""novelibre plugin for template-based export of the final document. 
 
 Requires Python 3.6+
 Copyright (c) 2025 Peter Triesberger
@@ -43,7 +43,10 @@ class Plugin(PluginBase):
         super().install(model, view, controller)
 
         # Add an entry to the Help menu.
-        self._ui.helpMenu.add_command(label='nv_custom_export Online help', command=self.open_help)
+        self._ui.helpMenu.add_command(
+            label='nv_custom_export Online help',
+            command=self.open_help,
+        )
 
         # Start the service.
         self.customExportService = CustomExportService(model, view, controller)
