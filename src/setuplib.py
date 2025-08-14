@@ -16,13 +16,12 @@ from pathlib import Path
 try:
     from tkinter import *
 except ModuleNotFoundError:
-    print(print(
+    input(
         (
             'The tkinter module is missing. '
             'Please install the tk support package for your python3 version.'
         )
     )
-)
     sys.exit(1)
 
 PLUGIN = 'nv_custom_export.py'
