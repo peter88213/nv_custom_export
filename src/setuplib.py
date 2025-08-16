@@ -15,7 +15,7 @@ import sys
 import zipfile
 
 PLUGIN = 'nv_custom_export.py'
-VERSION = ' @release'
+VERSION = '@release'
 PRJ = 'nv_custom_export'
 
 pyz = os.path.dirname(__file__)
