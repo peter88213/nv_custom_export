@@ -43,8 +43,8 @@ the zip file.
 The package is also available in zip format: [nv_custom_export_v0.3.1.zip](https://github.com/peter88213/nv_custom_export/raw/main/dist/nv_custom_export_v0.3.1.zip)
 
 - Extract the *nv_custom_export_v0.3.1* folder from the downloaded zipfile "nv_custom_export_v0.3.1.zip".
-- Move into this new folder and launch *setup.pyw* by double-clicking (Windows/Linux desktop), 
-- or execute `python setup.pyw` (Windows), resp. `python3 setup.pyw` (Linux) on the command line.
+- Move into this new folder and launch *setup.py* by double-clicking (Windows/Linux desktop), 
+- or execute `python setup.py` (Windows), resp. `python3 setup.py` (Linux) on the command line.
 
 ---
 
