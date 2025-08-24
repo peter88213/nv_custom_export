@@ -15,7 +15,7 @@ or globally (for all projects) by the user.
 
 ## Requirements
 
-- [novelibre](https://github.com/peter88213/novelibre/) version 5.23+
+- [novelibre](https://github.com/peter88213/novelibre/) version 5.33+
 
 ## Download and install
 
