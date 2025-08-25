@@ -24,7 +24,7 @@ from nvcustomexport.custom_export_service import CustomExportService
 class Plugin(PluginBase):
     """Template plugin class."""
     VERSION = '@release'
-    API_VERSION = '5.33'
+    API_VERSION = '5.34'
     DESCRIPTION = 'Custom template-based export for the final document'
     URL = 'https://github.com/peter88213/nv_custom_export'
 
