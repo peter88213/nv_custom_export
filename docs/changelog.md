@@ -10,7 +10,7 @@
 - Updated the placeholder definitions for novelibre 5.34.
 
 API: 5.34
-Based on novelibre 5.34.0
+Based on novelibre 5.35.1
 
 
 ### Version 5.0.0
