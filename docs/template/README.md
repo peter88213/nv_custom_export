@@ -23,13 +23,13 @@ or globally (for all projects) by the user.
 
 Download the latest release [nv_custom_export_v0.99.0.pyz](https://github.com/peter88213/nv_custom_export/raw/main/dist/nv_custom_export_v0.99.0.pyz)
 
-- Launch *nv_custom_export_v0.99.0.pyz* by double-clicking (Windows/Linux desktop),
+- Launch *nv_custom_export_v0.99.0.pyz* by double-clicking (Windows desktop),
 - or execute `python nv_custom_export_v0.99.0.pyz` (Windows), resp. `python3 nv_custom_export_v0.99.0.pyz` (Linux) on the command line.
 
 #### Important
 
 Many web browsers recognize the download as an executable file and offer to open it immediately. 
-This starts the installation.
+This starts the installation under Windows.
 
 However, depending on your security settings, your browser may 
 initially  refuse  to download the executable file. 
