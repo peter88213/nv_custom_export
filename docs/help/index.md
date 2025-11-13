@@ -12,20 +12,16 @@ The plugin replaces the default templates for the *Final manuscript document* ex
 with custom templates that can be provided either locally (per project), 
 or globally (for all projects) by the user. 
 
----
+> [!IMPORTANT]
+> The *nv_custom_export* plugin processes text files to generate code according to the 
+> [OpenDocument XML file format](https://en.wikipedia.org/wiki/OpenDocument_technical_specification#content.xml). 
+> I highly recommend that you familiarize yourself with this XML format before creating your 
+> own templates. If you do something wrong, *novelibre* may generate a text document that cannot 
+> be opened by OpenOffice/LibreOffice. In an emergency, simply delete your self-generated 
+> template files or uninstall the *nv_custom_export* plugin via the Plugin manager. 
+>
+> The best way to get started is to experiment with the examples provided (see below).
 
-**Important**
-
-The *nv_custom_export* plugin processes text files to generate code according to the 
-[OpenDocument XML file format](https://en.wikipedia.org/wiki/OpenDocument_technical_specification#content.xml). 
-I highly recommend that you familiarize yourself with this XML format before creating your 
-own templates. If you do something wrong, *novelibre* may generate a text document that cannot 
-be opened by OpenOffice/LibreOffice. In an emergency, simply delete your self-generated 
-template files or uninstall the *nv_custom_export* plugin via the Plugin manager. 
-
-The best way to get started is to experiment with the examples provided (see below).
-
----
 
 
 ## Configuration
@@ -62,19 +58,15 @@ The installation includes a directory named `nv_custom_export_sample` containing
 subdirectories with example templates for different purposes. 
 Please refer to the included README files for documentation.
 
----
+> [!TIP]
+> If you insert metadata such as date, time, location, or viewpoint, 
+> you best use heading page styles that are not used by *novelibre* 
+> by default, i.e. `Heading 5`, `Heading 6`, `Heading 7`, etc.
+> To adjust the appearance and the spacing above and below
+> the paragraphs, you might want to set a custom ODT export 
+> [document template](https://peter88213.github.io/nvhelp-en/export_menu.html#select-document-template)
+> and edit the paragraph styles there. 
 
-**Hint**
-
-If you insert metadata such as date, time, location, or viewpoint, 
-you best use heading page styles that are not used by *novelibre* 
-by default, i.e. `Heading 5`, `Heading 6`, `Heading 7`, etc.
-To adjust the appearance and the spacing above and below
-the paragraphs, you might want to set a custom ODT export 
-[document template](https://peter88213.github.io/nvhelp-en/export_menu.html#select-document-template)
-and edit the paragraph styles there. 
-
----
 
 ## Reference
 
