@@ -12,7 +12,8 @@ The plugin replaces the default templates for the *Final manuscript document* ex
 with custom templates that can be provided either locally (per project), 
 or globally (for all projects) by the user. 
 
-> [!IMPORTANT]
+> **Important**
+>
 > The *nv_custom_export* plugin processes text files to generate code according to the 
 > [OpenDocument XML file format](https://en.wikipedia.org/wiki/OpenDocument_technical_specification#content.xml). 
 > I highly recommend that you familiarize yourself with this XML format before creating your 
@@ -58,7 +59,8 @@ The installation includes a directory named `nv_custom_export_sample` containing
 subdirectories with example templates for different purposes. 
 Please refer to the included README files for documentation.
 
-> [!TIP]
+> **Tip**
+>
 > If you insert metadata such as date, time, location, or viewpoint, 
 > you best use heading page styles that are not used by *novelibre* 
 > by default, i.e. `Heading 5`, `Heading 6`, `Heading 7`, etc.
