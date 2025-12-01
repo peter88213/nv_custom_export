@@ -41,15 +41,16 @@ class Plugin(PluginBase):
         Extends the superclass method.
         """
         super().install(model, view, controller)
+        self.customExportService = CustomExportService(model, view, controller)
+
+        #--- Configure the main menu.
 
         # Add an entry to the Help menu.
+        label = 'nv_custom_export Online help'
         self._ui.helpMenu.add_command(
-            label='nv_custom_export Online help',
+            label=label,
             command=self.open_help,
         )
-
-        # Start the service.
-        self.customExportService = CustomExportService(model, view, controller)
 
     def on_open(self):
         """Actions to be performed after a project is opened."""
