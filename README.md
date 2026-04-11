@@ -21,7 +21,7 @@ or globally (for all projects) by the user.
 
 ### Default: Executable Python zip archive
 
-Download the latest release [nv_custom_export_v5.1.0.pyz](https://github.com/peter88213/nv_custom_export/raw/main/dist/nv_custom_export_v5.1.0.pyz)
+Download the latest release [nv_custom_export_v5.1.0.pyz](https://github.com/peter88213/nv_custom_export/raw/main/dist/nv_custom_export_v5.1.0.pyz) (21 KB)
 
 - Launch *nv_custom_export_v5.1.0.pyz* by double-clicking (Windows desktop),
 - or execute `python nv_custom_export_v5.1.0.pyz` (Windows), resp. `python3 nv_custom_export_v5.1.0.pyz` (Linux) on the command line.
@@ -39,7 +39,7 @@ Download the latest release [nv_custom_export_v5.1.0.pyz](https://github.com/pet
 
 ### Alternative: Zip file
 
-The package is also available in zip format: [nv_custom_export_v5.1.0.zip](https://github.com/peter88213/nv_custom_export/raw/main/dist/nv_custom_export_v5.1.0.zip)
+The package is also available in zip format: [nv_custom_export_v5.1.0.zip](https://github.com/peter88213/nv_custom_export/raw/main/dist/nv_custom_export_v5.1.0.zip) (21 KB)
 
 - Extract the *nv_custom_export_v5.1.0* folder from the downloaded zipfile "nv_custom_export_v5.1.0.zip".
 - Move into this new folder and launch *setup.py* by double-clicking (Windows/Linux desktop), 
