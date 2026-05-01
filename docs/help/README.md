@@ -1,4 +1,4 @@
-[Project homepage](https://github.com/peter88213/nv_custom_export) > [Index](../) > User guide
+[Project homepage](https://github.com/peter88213/nv_custom_export) > User guide
 
 ---
 
