@@ -15,20 +15,18 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 """
-import webbrowser
-
 from nvlib.controller.plugin.plugin_base import PluginBase
 from nvcustomexport.custom_export_service import CustomExportService
 
 
 class Plugin(PluginBase):
-    """Template plugin class."""
+    """Custom template-based export plugin class."""
     VERSION = '@release'
-    API_VERSION = '5.34'
+    API_VERSION = '5.63'
     DESCRIPTION = 'Custom template-based export for the final document'
     URL = 'https://github.com/peter88213/nv_custom_export'
-
-    HELP_URL = 'https://peter88213.github.io/nv_custom_export/help/'
+    HELP_SITE = 'https://peter88213.github.io/nv_custom_export'
+    HELP_PAGE = 'help'
 
     def install(self, model, view, controller):
         """Install the plugin at runtime.
@@ -43,19 +41,11 @@ class Plugin(PluginBase):
         super().install(model, view, controller)
         self.customExportService = CustomExportService(model, view, controller)
 
-        #--- Configure the main menu.
+        #--- Configure the user interface.
 
-        # Add an entry to the Help menu.
-        label = 'nv_custom_export Online help'
-        self._ui.helpMenu.add_command(
-            label=label,
-            command=self.open_help,
-        )
+        self._add_help_menu_entry('nv_custom_export plugin help')
 
     def on_open(self):
         """Actions to be performed after a project is opened."""
         self.customExportService.set_custom_templates()
-
-    def open_help(self):
-        webbrowser.open(self.HELP_URL)
 
