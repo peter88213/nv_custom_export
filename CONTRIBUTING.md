@@ -72,7 +72,7 @@ See the [novelibre CONTRIBUTING page](https://github.com/peter88213/novelibre/bl
 └── nv_custom_export/
     ├── i18n/
     ├── src/
-	 │   └── nvcustomexport/
+    │   └── nvcustomexport/
     └── tools/ 
         └── build.py
 ```
